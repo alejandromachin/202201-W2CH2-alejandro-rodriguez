@@ -102,4 +102,16 @@ describe("Given a strictEquals function", () => {
       expect(equals).toBe(expectedReturn);
     });
   });
+
+  describe("When it receives to values equal to 'water' and 'oil'", () => {
+    test("Then it should return true", () => {
+      const a = "water";
+      const b = "oil";
+
+      const expectedReturn = false;
+
+      const equals = strictEquals(a, b);
+      expect(equals).toBe(expectedReturn);
+    });
+  });
 });
