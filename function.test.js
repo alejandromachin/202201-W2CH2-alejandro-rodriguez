@@ -1,4 +1,3 @@
-
 function strictEquals(a, b) {
   let returnValue = Object.is(a, b);
 
@@ -14,7 +13,7 @@ function strictEquals(a, b) {
   }
 
   return returnValue;
-
+}
 
 describe("Given a strictEquals function", () => {
   describe("When it receives two values equal to 1", () => {
