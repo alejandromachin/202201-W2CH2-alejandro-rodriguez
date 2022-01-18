@@ -91,4 +91,15 @@ describe("Given a strictEquals function", () => {
       expect(equals).toBe(expectedReturn);
     });
   });
+  describe("When it receives to values equal to false and false", () => {
+    test("Then it should return true", () => {
+      const a = false;
+      const b = false;
+
+      const expectedReturn = true;
+
+      const equals = strictEquals(a, b);
+      expect(equals).toBe(expectedReturn);
+    });
+  });
 });
